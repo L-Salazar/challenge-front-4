@@ -16,7 +16,7 @@ function NavBar() {
                 <MenuButton />
                 <Link href="/">
                     <figure className='w-16 h-auto '>
-                        <img src={logo.src} alt="" />
+                        <img src='/images/logo.png' alt="" />
                     </figure>
                 </Link>
 

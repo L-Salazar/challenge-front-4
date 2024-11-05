@@ -53,7 +53,7 @@ function Login() {
   return (
     <main className='w-full flex items-center pt-12 flex-col gap-12'>
       <figure>
-  <img src={logo.src} alt="Logo" className='w-40 h-40 object-contain' /> {/* Ajuste os valores conforme necessário */}
+      <img src='/images/logo.png' alt="" className='w-40 h-40 object-contain' /> {/* Ajuste os valores conforme necessário */}
 </figure>
 
       <div className='bg-[#00A0FB] w-[500px] p-12 text-white mx-auto rounded-3xl flex flex-col items-center gap-16'>
