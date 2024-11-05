@@ -4,7 +4,8 @@ import useUsuario from '@/hooks/UseUsuario';
 import ActiveLink from '../activelink/ActiveLink';
 import MenuButton from '../menubutton/MenuButton';
 import Link from 'next/link';
-import logo from '@/app/assets/images/logo.png';
+//import logo from '@/app/assets/images/logo.png';
+import logo from '/app/assets/images/logo.png';
 
 
 

@@ -5,7 +5,7 @@ import Usuario from '@/types/Usuario';
 import useForm, { FormState } from '../../hooks/UseForms';
 import Redirect from '@/utils/Redirect';
 import useUsuario from '@/hooks/UseUsuario';
-import logo from '@/app/assets/images/logo.png';
+import logo from '../assets/images/logo.png';
 
 interface UsuarioLogin extends FormState {
   email: string;
