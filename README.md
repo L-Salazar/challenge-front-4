@@ -1,6 +1,10 @@
-## URL do video de demonstração realizando o chamado das API's localmente:
+## URL do video de demonstração realizando o chamado das API's localmente ( Java e Python (Chatbot) ):
 
 https://youtu.be/bAYQauZpZCU
+
+## Vercel:
+
+https://challenge-front-4-chi.vercel.app/
 
 ## Sobre a PortoQuest
 
