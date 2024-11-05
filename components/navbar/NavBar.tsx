@@ -7,9 +7,6 @@ import Link from 'next/link';
 //import logo from '@/app/assets/images/logo.png';
 import logo from '/app/assets/images/logo.png';
 
-
-
-
 function NavBar() {
     const { usuario } = useUsuario();
 
