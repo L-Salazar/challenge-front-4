@@ -1,3 +1,7 @@
+## URL do video de demonstração realizando o chamado das API's localmente:
+
+https://youtu.be/bAYQauZpZCU
+
 ## Sobre a PortoQuest
 
 A PortoQuest tem como objetivo criar uma experiência dinâmica e recompensadora para a manutenção de veículos, utilizando gamificação para incentivar visitas regulares e premiar a lealdade dos usuários. Com um sistema de pontos, manutenções gratuitas e uma plataforma de promoção para oficinas, oferecemos uma solução completa que beneficia tanto consumidores quanto prestadores de serviços. Nosso suporte contínuo através de chatbot e notificações personalizadas via IA garantem uma comunicação eficaz e uma experiência de usuário excepcional.
@@ -53,3 +57,172 @@ A tela de FAQ no aplicativo PortoQuest apresenta uma seção de perguntas freque
 - ### ChatBot
 
 A tela ChatBot no aplicativo PortoQuest apresenta uma interface de conversação entre o usuário e o chatbot. As mensagens enviadas e recebidas são exibidas em balões, organizados em um layout que simula uma conversa, com as mensagens do usuário à esquerda e as respostas do chatbot à direita. O fundo azul destaca a área de chat, e o texto fictício em Lorem Ipsum serve como um placeholder para o conteúdo real das conversas. Na parte inferior da tela, há um campo com a mensagem "Pergunte ao nosso chatbot:", indicando onde o usuário pode inserir suas perguntas. O menu de navegação permanece no topo para facilitar o acesso a outras funcionalidades.
+
+## Tabela com os endpoints
+
+Veículo:
+Endpoint: /veiculo
+Método HTTP: GET
+Descrição: Retorna todos os veículos cadastrados.
+Status Code: Retorna 200 (OK) se houver veículos, ou 404 (Not Found) se não houver.
+
+Endpoint: /veiculo/{id}
+Método HTTP: GET
+Descrição: Retorna um veículo específico pelo seu ID.
+Status Code: Retorna 200 (OK) se o veículo for encontrado, ou 404 (Not Found) se o veículo não existir.
+
+Endpoint: /veiculo
+Método HTTP: POST
+Descrição: Adiciona um novo veículo ao sistema.
+Status Code: Retorna 201 (Created) se o veículo for adicionado com sucesso, ou 400 (Bad Request) em caso de erro.
+
+Endpoint: /veiculo/{id}
+Método HTTP: DELETE
+Descrição: Exclui um veículo específico pelo seu ID.
+Status Code: Retorna 200 (OK) se o veículo for excluído com sucesso, ou 404 (Not Found) se o veículo não for encontrado.
+
+Endpoint: /veiculo/{id}
+Método HTTP: PUT
+Descrição: Atualiza as informações de um veículo específico pelo seu ID.
+Status Code: Retorna 200 (OK) se o veículo for atualizado com sucesso, ou 404 (Not Found) se o veículo não for encontrado.
+
+Usuário:
+
+Endpoint: /usuario
+Método HTTP: GET
+Descrição: Retorna todos os usuários cadastrados.
+Status Code: Retorna 200 (OK) se houver usuários, ou 404 (Not Found) se não houver.
+
+Endpoint: /usuario/{id}
+Método HTTP: GET
+Descrição: Retorna um usuário específico pelo seu ID.
+Status Code: Retorna 200 (OK) se o usuário for encontrado, ou 404 (Not Found) se o usuário não existir.
+
+Endpoint: /usuario
+Método HTTP: POST
+Descrição: Adiciona um novo usuário ao sistema.
+Status Code: Retorna 201 (Created) se o usuário for adicionado com sucesso, ou 400 (Bad Request) em caso de erro.
+
+Endpoint: /usuario/{id}
+Método HTTP: DELETE
+Descrição: Exclui um usuário específico pelo seu ID.
+Status Code: Retorna 200 (OK) se o usuário for excluído com sucesso, ou 404 (Not Found) se o usuário não for encontrado.
+
+Endpoint: /usuario/{id}
+Método HTTP: PUT
+Descrição: Atualiza as informações de um usuário específico pelo seu ID.
+Status Code: Retorna 200 (OK) se o usuário for atualizado com sucesso, ou 404 (Not Found) se o usuário não for encontrado.
+
+Resgates Do Usuário:
+
+Endpoint: /resgate-usuario
+Método HTTP: GET
+Descrição: Retorna todos os registros de resgate de usuários.
+Status Code: Retorna 200 (OK) se houver registros, ou 404 (Not Found) se não houver.
+
+Endpoint: /resgate-usuario/{id}
+Método HTTP: GET
+Descrição: Retorna um registro de resgate de usuário específico pelo seu ID.
+Status Code: Retorna 200 (OK) se o registro for encontrado, ou 404 (Not Found) se o registro não existir.
+
+Endpoint: /resgate-usuario
+Método HTTP: POST
+Descrição: Adiciona um novo registro de resgate de usuário ao sistema.
+Status Code: Retorna 201 (Created) se o registro for adicionado com sucesso, ou 400 (Bad Request) em caso de erro.
+
+Endpoint: /resgate-usuario/{id}
+Método HTTP: DELETE
+Descrição: Exclui um registro de resgate de usuário específico pelo seu ID.
+Status Code: Retorna 200 (OK) se o registro for excluído com sucesso, ou 404 (Not Found) se o registro não for encontrado.
+
+Endpoint: /resgate-usuario/{id}
+Método HTTP: PUT
+Descrição: Atualiza as informações de um registro de resgate de usuário específico pelo seu ID.
+Status Code: Retorna 200 (OK) se o registro for atualizado com sucesso, ou 404 (Not Found) se o registro não for encontrado.
+
+Recompensa:
+
+Endpoint: /recompensas
+Método HTTP: GET
+Descrição: Retorna todas as recompensas cadastradas.
+Status Code: Retorna 200 (OK) se houver recompensas, ou 404 (Not Found) se não houver.
+
+Endpoint: /recompensas/{id}
+Método HTTP: GET
+Descrição: Retorna uma recompensa específica pelo seu ID.
+Status Code: Retorna 200 (OK) se a recompensa for encontrada, ou 404 (Not Found) se a recompensa não existir.
+
+Endpoint: /recompensas
+Método HTTP: POST
+Descrição: Adiciona uma nova recompensa ao sistema.
+Status Code: Retorna 201 (Created) se a recompensa for adicionada com sucesso, ou 400 (Bad Request) em caso de erro.
+
+Endpoint: /recompensas/{id}
+Método HTTP: DELETE
+Descrição: Exclui uma recompensa específica pelo seu ID.
+Status Code: Retorna 204 (No Content) se a recompensa for excluída com sucesso, ou 404 (Not Found) se a recompensa não for encontrada.
+
+Endpoint: /recompensas/{id}
+Método HTTP: PUT
+Descrição: Atualiza as informações de uma recompensa específica pelo seu ID.
+Status Code: Retorna 201 (Created) se a recompensa for atualizada com sucesso, ou 400 (Bad Request) em caso de erro.
+
+Peca:
+
+Endpoint: /peca
+Método HTTP: GET
+Descrição: Retorna todas as peças cadastradas.
+Status Code: Retorna 200 (OK) se houver peças, ou 404 (Not Found) se não houver.
+
+Endpoint: /peca/{id}
+Método HTTP: GET
+Descrição: Retorna uma peça específica pelo seu ID.
+Status Code: Retorna 200 (OK) se a peça for encontrada, ou 404 (Not Found) se a peça não existir.
+
+Endpoint: /peca
+Método HTTP: POST
+Descrição: Adiciona uma nova peça ao sistema.
+Status Code: Retorna 201 (Created) se a peça for adicionada com sucesso, ou 400 (Bad Request) em caso de erro.
+
+Endpoint: /peca/{id}
+Método HTTP: DELETE
+Descrição: Exclui uma peça específica pelo seu ID.
+Status Code: Retorna 200 (OK) se a peça for excluída com sucesso, ou 404 (Not Found) se a peça não for encontrada.
+
+Endpoint: /peca/{id}
+Método HTTP: PUT
+Descrição: Atualiza as informações de uma peça específica pelo seu ID.
+Status Code: Retorna 200 (OK) se a peça for atualizada com sucesso, ou 404 (Not Found) se a peça não for encontrada.
+
+Oficina Parceira:
+
+Endpoint: /oficinas
+Método HTTP: GET
+Descrição: Retorna todas as oficinas parceiras cadastradas.
+Status Code: Retorna 200 (OK) se houver oficinas cadastradas, ou 404 (Not Found) se não houver.
+
+Endpoint: /oficinas/{id}
+Método HTTP: GET
+Descrição: Retorna uma oficina parceira específica pelo seu ID.
+Status Code: Retorna 200 (OK) se a oficina for encontrada, ou 404 (Not Found) se a oficina não existir.
+
+Endpoint: /oficinas
+Método HTTP: POST
+Descrição: Adiciona uma nova oficina parceira ao sistema.
+Status Code: Retorna 201 (Created) se a oficina for adicionada com sucesso, ou 400 (Bad Request) em caso de erro.
+
+Endpoint: /oficinas/{id}
+Método HTTP: DELETE
+Descrição: Exclui uma oficina parceira específica pelo seu ID.
+Status Code: Retorna 204 (No Content) se a oficina for excluída com sucesso, ou 404 (Not Found) se a oficina não for encontrada.
+
+Endpoint: /oficinas/{id}
+Método HTTP: PUT
+Descrição: Atualiza as informações de uma oficina parceira específica pelo seu ID.
+Status Code: Retorna 201 (Created) se a oficina for atualizada com sucesso, ou 400 (Bad Request) em caso de erro.
+
+Esse formato fornece uma visão clara e organizada de cada endpoint da classe OficinaParceiraResource
+
+Endpoint: /chabot-faq
+Metodo HTTP: POST
+Descrição: Espera uma pergunta e retorna a resposta com base no modelo treinado em IA
